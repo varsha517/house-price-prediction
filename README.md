@@ -1,88 +1,50 @@
 # 🏠 House Price Prediction using Machine Learning
 
-An end-to-end Machine Learning project that predicts house prices based on various housing features. This project demonstrates the complete ML workflow, including data preprocessing, exploratory data analysis, model building, evaluation, and model deployment preparation.
-
----
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?logo=numpy)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 📌 Project Overview
 
-House price prediction is a regression problem where the objective is to estimate the selling price of a house based on its characteristics.
+This project predicts house prices using Machine Learning techniques based on various property features such as area, number of bedrooms, bathrooms, parking availability, furnishing status, and more.
 
-In this project, multiple Machine Learning models were trained and compared to identify the best-performing model.
+The project includes complete data preprocessing, exploratory data analysis (EDA), feature engineering, model training, evaluation, and model saving using Python and Scikit-learn.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Problem Statement
 
-- Perform Exploratory Data Analysis (EDA)
-- Clean and preprocess the dataset
-- Encode categorical variables
-- Train multiple regression models
-- Compare model performance
-- Analyze feature importance
-- Save the trained model for future use
+Accurately predicting house prices is valuable for buyers, sellers, and real estate professionals. This project builds a regression model capable of estimating house prices using historical housing data.
 
 ---
 
 ## 📂 Dataset
 
 - Housing Price Dataset
-- Total Records: **545**
-- Features: **13**
+- 545 records
+- 13 input features
 - Target Variable: **Price**
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
-- Seaborn
 - Scikit-learn
-- Joblib
 - Jupyter Notebook
+- Joblib
 
 ---
 
-## 📊 Exploratory Data Analysis
+# 📊 Exploratory Data Analysis
 
-Performed:
-
-- Dataset inspection
-- Statistical summary
-- Missing value analysis
-- Duplicate value check
-- Correlation heatmap
-- Distribution plots
-- Scatter plots
-- Box plots
-
----
-
-## 🤖 Machine Learning Models
-
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-
----
-
-## 📈 Model Evaluation
-
-Evaluation Metrics:
-
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- R² Score
-
-Random Forest achieved the best overall performance among the trained models.
-
----
-
-## 📷 Project Visualizations
+The dataset was analyzed using various visualization techniques to understand feature relationships and distributions.
 
 ### Distribution of House Prices
 
@@ -92,11 +54,11 @@ Random Forest achieved the best overall performance among the trained models.
 
 ### Correlation Heatmap
 
-![Correlation Heatmap](images/correlation_heatmap.png)
+![Heatmap](images/correlation_heatmap.png)
 
 ---
 
-### Area vs Price
+### Area vs House Price
 
 ![Area vs Price](images/area_vs_price.png)
 
@@ -110,44 +72,137 @@ Random Forest achieved the best overall performance among the trained models.
 
 ### Actual vs Predicted Prices
 
-![Actual vs Predicted](images/actual_vs_predicted.png)
+![Prediction](images/actual_vs_predicted.png)
 
 ---
 
-## 📁 Project Structure
+# ⚙️ Project Workflow
 
 ```
-house-price-prediction/
+Housing Dataset
+       │
+       ▼
+Data Cleaning
+       │
+       ▼
+Feature Encoding
+       │
+       ▼
+Exploratory Data Analysis
+       │
+       ▼
+Train-Test Split
+       │
+       ▼
+Model Training
+       │
+       ▼
+Model Evaluation
+       │
+       ▼
+Save Trained Model
+```
+
+---
+
+# 🤖 Machine Learning Process
+
+✔ Data Cleaning
+
+✔ Handling Categorical Features
+
+✔ Feature Encoding
+
+✔ Train-Test Split
+
+✔ Model Training
+
+✔ Model Evaluation
+
+✔ Model Saving using Joblib
+
+---
+
+# 📁 Project Structure
+
+```
+House-Price-Prediction/
 │
 ├── data/
+│   └── Housing.csv
+│
 ├── images/
+│   ├── distribution.png
+│   ├── correlation_heatmap.png
+│   ├── area_vs_price.png
+│   ├── feature_importance.png
+│   └── actual_vs_predicted.png
+│
 ├── model/
+│   └── house_price_model.pkl
+│
 ├── notebook/
+│   └── House_Price_Prediction.ipynb
+│
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+└── LICENSE
 ```
 
 ---
 
-## 🚀 Future Improvements
+# 🚀 How to Run the Project
 
+### Clone the Repository
+
+```bash
+git clone https://github.com/varsha517/house-price-prediction.git
+```
+
+### Navigate to the Project
+
+```bash
+cd house-price-prediction
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open the notebook and run all cells.
+
+---
+
+# 📌 Future Improvements
+
+- Deploy the model using Streamlit
 - Hyperparameter tuning
-- Cross-validation
-- Feature engineering
-- Streamlit web application
-- Model deployment using Flask/FastAPI
+- Feature selection
+- Improve prediction accuracy
+- Build a web interface for user input
 
 ---
 
-## 📬 Connect With Me
+# 👩‍💻 Author
 
-**GitHub**
-https://github.com/varsha517
+**S Varsha**
 
-**LinkedIn**
-https://linkedin.com/in/s-varsha-a904092b5
+Artificial Intelligence & Machine Learning Undergraduate
+
+📧 Email: **swathisatheesh2008@gmail.com**
+
+🔗 GitHub: https://github.com/varsha517
+
+🔗 LinkedIn: https://www.linkedin.com/in/s-varsha-a904092b5
 
 ---
 
-⭐ If you found this project useful, consider giving it a Star!
+## ⭐ If you found this project useful, consider giving it a star!
